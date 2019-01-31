@@ -1,0 +1,176 @@
+* {
+    font-family: Helvetica;
+    font-size: 24px;
+    text-align: center;
+    box-sizing: border-box;   
+}
+
+.default {
+    background-color: whitesmoke;
+    color: #3F3931;
+}
+.night {
+    background-color: #3F3934;
+    color: whitesmoke;
+}
+
+#listDisplay, #amountDisplay, #tagsCloudDisplay, #yearSearchDisplay {
+    margin: 20px auto 30px auto;
+    width: 930px;
+}
+
+p {
+    font-size: 0.8rem;
+}
+
+h2 {
+    font-size: 0.8rem;
+}
+h3 {
+    font-size: 0.6rem;
+}
+.odd, .even {
+    margin: 3px;
+    display: inline-block;
+    width: 300px;
+    height: 100px;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.odd {
+    background-color: #E7BAA0;
+}
+.even {
+    background-color: #B2B2A2;
+}
+
+.odd-night {
+    background-color: #B2B2A2;
+    color: whitesmoke;
+}
+.even-night {
+    background-color: #6D7973;
+    color: whitesmoke;
+}
+
+/*switch*/
+input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+label {
+    display: block;
+    right: -90%;
+	cursor: pointer;
+	width: 80px;
+	height: 35px;
+	background: #DDDDDD;
+	border-radius: 50px;
+	position: relative;
+}
+
+label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 45px;
+	transition: 0.3s;
+}
+
+input:checked + label {
+	background: #6D7973;
+}
+
+input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+label:active:after {
+	width: 65px;
+}
+/*switch*/
+
+span {
+    font-size: 0.8rem;
+}
+form input {
+    font-size: 0.6rem;
+    text-align: left;
+    width: 300px;
+}
+
+form input[type=number]{
+    width: 110px;
+}
+
+form input[type=submit]{
+    width: 110px;
+    text-align: center;
+}
+
+#message {
+    height: 10px;
+    margin-top: 10px;
+    font-size: 0.6rem;
+    color: #5E8600;
+}
+
+.small, .large, .big, .all {
+    cursor: pointer;
+}
+.small {
+    font-size: 12px;
+}
+.large {
+    font-size: 16px;
+}
+.big {
+    font-size: 18px;
+}
+.all {
+    font-size: 22px; 
+}
+
+option {
+    font-size: 14px;
+}
+
+#tagsCloudDisplay p {
+    display: inline-block;
+    font-weight: bold;
+    margin: 1px;
+    text-align: justify;
+}
+
+#tagsCloudDisplay h3 {
+    text-align: left;
+}
+
+#yearSearchDisplay {
+    display: flex;
+    justify-content: initial;
+    align-items: center;
+}
+#yearSearchDisplay h3 {
+    text-align: left;
+}
+
+#yearSearchDisplay select {
+    height: 25px;
+    font-size: 0.6rem;
+    margin-left: 10px;
+}
+
+.hide {
+    display: none;
+}
