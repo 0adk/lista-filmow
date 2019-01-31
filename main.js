@@ -270,8 +270,9 @@ function SearchByTag() {
             const $tiles = Array.from(document.querySelectorAll('#listDisplay div'));
             $tiles.forEach($item => {
                 const text = $item.querySelector('h2').textContent.toLowerCase();
+                const arrayFromText = text.split(/[\s,]+/);
 
-                if (text.includes(tagText)) {
+                if (arrayFromText.includes(tagText)) {
                     $item.classList.remove('hide')
                 } else {
                     $item.classList.add('hide')
